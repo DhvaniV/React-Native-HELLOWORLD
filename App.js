@@ -3,9 +3,7 @@ import{StyleSheet , Text , View, TextInput, Button} from 'react-native';
 
 export default function App(){
   const [name, setName] = useState('Dhvani');
-  const clickhandler = () => {
-    setName = ('Tatvasoft');
-
+  
   };
   return(
     <View style={styles.container}>
@@ -14,7 +12,7 @@ export default function App(){
       style={styles.input}
       placeholder = 'e.g. ram narayan'/>
       <Text>My Name is {name}</Text>
-      <Button style = {styles.button}  title = 'Update' onPress = {clickhandler}/>
+      
     </View>
   );
 }
@@ -33,7 +31,5 @@ const styles = StyleSheet.create({
     margin: 6,
     backgroundColor: '#777'
   },
-  button: {
-    marginTop: 20
-  }
+ 
 });
